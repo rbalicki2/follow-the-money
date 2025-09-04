@@ -1,0 +1,36 @@
+{
+  "name": "pet-demo",
+  "version": "0.3.1",
+  "private": true,
+  "scripts": {
+    "build:swc-plugin": "cd ../../libs/isograph-swc-plugin && pnpm build && cd ../../demos/pet-demo",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "backend": "node ./backend/src/index.js",
+    "tsc": "tsc",
+    "tsc-force": "tsc --build --clean && tsc --build --force"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@isograph/react": "0.0.0-main-f6a929bf",
+    "@isograph/react-disposable-state": "0.0.0-main-f6a929bf",
+    "@isograph/compiler": "0.0.0-main-f6a929bf",
+    "@isograph/plugin-swc": "0.0.0-main-f6a929bf",
+    "@mui/material": "^5.14.8",
+    "@types/node": "20.6.0",
+    "@types/react": "18.3.1",
+    "@types/react-dom": "18.3.1",
+    "eslint": "8.49.0",
+    "eslint-config-next": "13.4.19",
+    "graphql": "^16.6.0",
+    "graphql-yoga": "^4.0.4",
+    "lorem-ipsum": "^2.0.8",
+    "next": "14.2.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "typescript": "5.6.3"
+  }
+}

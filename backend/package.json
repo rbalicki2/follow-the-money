@@ -1,0 +1,10 @@
+{
+  "name": "pet-demo-backend",
+  "version": "0.3.1",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "graphql": "^16.6.0",
+    "graphql-yoga": "^4.0.4"
+  }
+}

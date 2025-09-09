@@ -7,6 +7,24 @@ import Suspect__Avatar__resolver_reader from '../../Suspect/Avatar/resolver_read
 const readerAst: ReaderAst<Case__DirtiestDodgerCard__param> = [
   {
     kind: "Linked",
+    fieldName: "suspects",
+    alias: null,
+    arguments: null,
+    condition: null,
+    isUpdatable: false,
+    selections: [
+      {
+        kind: "Scalar",
+        fieldName: "delinquentTaxes",
+        alias: null,
+        arguments: null,
+        isUpdatable: false,
+      },
+    ],
+    refetchQueryIndex: null,
+  },
+  {
+    kind: "Linked",
     fieldName: "dirtiestDodger",
     alias: null,
     arguments: null,

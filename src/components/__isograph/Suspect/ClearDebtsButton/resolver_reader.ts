@@ -5,17 +5,17 @@ import { ClearDebtsButton as resolver } from '../../../Suspect/ClearDebtsButton'
 const readerAst: ReaderAst<Suspect__ClearDebtsButton__param> = [
   {
     kind: "Scalar",
-    fieldName: "income",
-    alias: null,
-    arguments: null,
-    isUpdatable: false,
-  },
-  {
-    kind: "Scalar",
     fieldName: "delinquentTaxes",
     alias: null,
     arguments: null,
     isUpdatable: true,
+  },
+  {
+    kind: "Scalar",
+    fieldName: "id",
+    alias: null,
+    arguments: null,
+    isUpdatable: false,
   },
 ];
 

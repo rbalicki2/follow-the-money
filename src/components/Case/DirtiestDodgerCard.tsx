@@ -1,26 +1,24 @@
 import { iso } from "@iso";
-import { Button, Card, CardContent, Stack } from "@mui/material";
+import { Card, CardContent, Stack } from "@mui/material";
 import React from "react";
-import {
-  FragmentReader,
-  useImperativeLoadableField,
-  useIsographEnvironment,
-} from "@isograph/react";
+import { FragmentReader, useClientSideDefer } from "@isograph/react";
 
 export const BioCard = iso(`
   field Case.DirtiestDodgerCard @component {
+    suspects {
+      delinquentTaxes
+    }
     dirtiestDodger {
       name
       Avatar
     }
   }
-`)(function BioCardComponent({ data }) {
-  const { fragmentReference, loadField } = useImperativeLoadableField(
-    data.dirtiestDodger
-  );
-  console.log(fragmentReference);
-  const env = useIsographEnvironment();
-  console.log({ env });
+`)(function DirtiestDodgerCard({ data }) {
+  console.log("dodger card re-rendered tho", data);
+  // const { fragmentReference, loadField } = useImperativeLoadableField(
+  //   data.dirtiestDodger
+  // );
+  const { fragmentReference } = useClientSideDefer(data.dirtiestDodger);
 
   return (
     <Card
@@ -30,26 +28,20 @@ export const BioCard = iso(`
       <CardContent>
         <h2>Who is the Dirtiest Dodger...</h2>
         <Stack direction="column" spacing={4}>
-          {fragmentReference == null ? (
-            <Button variant="contained" onClick={() => loadField({})}>
-              Load
-            </Button>
-          ) : (
-            <React.Suspense fallback="Loading dirtiest dodger...">
-              <FragmentReader fragmentReference={fragmentReference}>
-                {(data) => (
-                  <>
-                    <Stack direction="row" spacing={4}>
-                      <data.Avatar />
-                      <h3>
-                        Is revealed to be <b>{data.name}</b>
-                      </h3>
-                    </Stack>
-                  </>
-                )}
-              </FragmentReader>
-            </React.Suspense>
-          )}
+          <React.Suspense fallback="Loading dirtiest dodger...">
+            <FragmentReader fragmentReference={fragmentReference}>
+              {(data) => (
+                <>
+                  <Stack direction="row" spacing={4}>
+                    <data.Avatar />
+                    <h3>
+                      Is revealed to be <b>{data.name}</b>
+                    </h3>
+                  </Stack>
+                </>
+              )}
+            </FragmentReader>
+          </React.Suspense>
         </Stack>
       </CardContent>
     </Card>

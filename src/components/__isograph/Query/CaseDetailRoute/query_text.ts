@@ -7,7 +7,6 @@ export default 'query CaseDetailRoute($id: ID!) {\
       businessName,\
       delinquentTaxes,\
       imageUrl,\
-      income,\
       jobTitle,\
       name,\
       shortBio,\

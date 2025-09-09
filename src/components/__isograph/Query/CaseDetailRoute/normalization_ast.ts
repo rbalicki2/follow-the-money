@@ -51,11 +51,6 @@ const normalizationAst: NormalizationAst = {
             },
             {
               kind: "Scalar",
-              fieldName: "income",
-              arguments: null,
-            },
-            {
-              kind: "Scalar",
               fieldName: "jobTitle",
               arguments: null,
             },

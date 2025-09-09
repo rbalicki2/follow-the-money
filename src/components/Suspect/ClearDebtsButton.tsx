@@ -4,8 +4,8 @@ import React from "react";
 
 export const ClearDebtsButton = iso(`
   field Suspect.ClearDebtsButton @component {
-    income
     delinquentTaxes @updatable
+    id
   }
 `)(function ClearDebtsButton({ data: suspect, startUpdate }) {
   return (

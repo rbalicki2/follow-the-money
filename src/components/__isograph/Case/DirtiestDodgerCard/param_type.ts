@@ -4,6 +4,9 @@ import { type Case__dirtiestDodger__param } from '../../Case/dirtiestDodger/para
 
 export type Case__DirtiestDodgerCard__param = {
   readonly data: {
+    readonly suspects: ReadonlyArray<{
+      readonly delinquentTaxes: number,
+    }>,
     readonly dirtiestDodger: LoadableField<Case__dirtiestDodger__param, {
       readonly name: string,
       readonly Avatar: Suspect__Avatar__output_type,

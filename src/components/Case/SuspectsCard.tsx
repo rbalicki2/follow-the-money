@@ -6,11 +6,13 @@ import React from "react";
 export const SuspectsCard = iso(`
   field Case.SuspectsCard @component {
     suspects {
+      id
       Avatar
       name
       jobTitle
       businessName
       shortBio
+      ClearDebtsButton
     }
   }
 `)(function SuspectsCard({ data }) {
@@ -24,7 +26,7 @@ export const SuspectsCard = iso(`
         <Stack direction="column" spacing={4}>
           <h2>Suspects</h2>
           {data.suspects.map((suspect) => (
-            <Stack direction="row" spacing={4}>
+            <Stack direction="row" spacing={4} key={suspect.id}>
               <suspect.Avatar />
               <div>
                 <p>
@@ -32,6 +34,7 @@ export const SuspectsCard = iso(`
                   {suspect.businessName}
                 </p>
                 <p>{suspect.shortBio}</p>
+                <suspect.ClearDebtsButton />
               </div>
             </Stack>
           ))}

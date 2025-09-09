@@ -2,6 +2,7 @@ import type {ComponentReaderArtifact, ExtractSecondParam, ReaderAst } from '@iso
 import { Case__SuspectsCard__param } from './param_type';
 import { SuspectsCard as resolver } from '../../../Case/SuspectsCard';
 import Suspect__Avatar__resolver_reader from '../../Suspect/Avatar/resolver_reader';
+import Suspect__ClearDebtsButton__resolver_reader from '../../Suspect/ClearDebtsButton/resolver_reader';
 
 const readerAst: ReaderAst<Case__SuspectsCard__param> = [
   {
@@ -12,6 +13,13 @@ const readerAst: ReaderAst<Case__SuspectsCard__param> = [
     condition: null,
     isUpdatable: false,
     selections: [
+      {
+        kind: "Scalar",
+        fieldName: "id",
+        alias: null,
+        arguments: null,
+        isUpdatable: false,
+      },
       {
         kind: "Resolver",
         alias: "Avatar",
@@ -46,6 +54,13 @@ const readerAst: ReaderAst<Case__SuspectsCard__param> = [
         alias: null,
         arguments: null,
         isUpdatable: false,
+      },
+      {
+        kind: "Resolver",
+        alias: "ClearDebtsButton",
+        arguments: null,
+        readerArtifact: Suspect__ClearDebtsButton__resolver_reader,
+        usedRefetchQueries: [],
       },
     ],
     refetchQueryIndex: null,

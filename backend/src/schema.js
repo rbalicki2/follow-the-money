@@ -36,7 +36,7 @@ const suspects = [
       "A short, rotund man with a penchant for high society and umbrellas, the Penguin is a crime lord who runs his empire with a twisted sense of decorum. He sees himself as a refined gentleman of the underworld, often hosting lavish parties while secretly orchestrating the city's most elaborate heists. He's a bit of a control freak, a germaphobe, and a bird enthusiast, often seen surrounded by his feathery friends who serve as both companions and criminal accomplices.",
     initials: "TP",
     shortBio: "A Gotham City mobster and criminal.",
-    delinquentTaxes: 0,
+    delinquentTaxes: 10000000,
     income: 500000,
     businessName: "Iceberg Lounge",
     customerComplaints:
@@ -98,7 +98,7 @@ const suspects = [
       'A former fixer for a shady Gotham politician. Rose through the ranks to be head enforcer at GraphQL conf.\n\
 Likes to crush his competition. Is known for loving AC/DC\'s "Dirty Deeds, Done Dirt Cheap". Except, his services are \n\
 never cheap. Prone to anger.',
-    delinquentTaxes: 1000000,
+    delinquentTaxes: 10000,
     income: 500000,
     businessName: "GraphQL Schema Migrations, Inc.",
     customerComplaints: "Dirty Schemas",

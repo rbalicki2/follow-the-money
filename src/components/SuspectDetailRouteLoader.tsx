@@ -1,5 +1,5 @@
 import { iso } from "@iso";
-import { FragmentReader, useLazyReference } from "@isograph/react";
+import { FragmentRenderer, useLazyReference } from "@isograph/react";
 import React from "react";
 import { ErrorBoundary } from "./ErrorBoundary";
 import { FullPageLoading, SuspectDetailRoute } from "./routes";
@@ -18,7 +18,7 @@ export function SuspectDetailRouteLoader({
   return (
     <ErrorBoundary>
       <React.Suspense fallback={<FullPageLoading />}>
-        <FragmentReader
+        <FragmentRenderer
           fragmentReference={fragmentReference}
           networkRequestOptions={{ suspendIfInFlight: false }}
         />

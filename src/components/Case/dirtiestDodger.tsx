@@ -8,6 +8,7 @@ export const SuspectsCard = iso(`
     }
   }
 `)(function SuspectsCard({ data }) {
+  console.log("diritest dodger", data);
   // Find the suspect with most delinquent taxes
   let largestDelinquentTaxes = -Infinity;
   let suspectLink = null;

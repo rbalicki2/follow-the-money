@@ -1,7 +1,11 @@
 import { iso } from "@iso";
 import { Button, Card, CardContent, Stack } from "@mui/material";
 import React from "react";
-import { useImperativeLoadableField } from "@isograph/react";
+import {
+  FragmentReader,
+  useImperativeLoadableField,
+  useIsographEnvironment,
+} from "@isograph/react";
 
 export const BioCard = iso(`
   field Case.DirtiestDodgerCard @component {
@@ -14,6 +18,9 @@ export const BioCard = iso(`
   const { fragmentReference, loadField } = useImperativeLoadableField(
     data.dirtiestDodger
   );
+  console.log(fragmentReference);
+  const env = useIsographEnvironment();
+  console.log({ env });
 
   return (
     <Card
@@ -29,7 +36,18 @@ export const BioCard = iso(`
             </Button>
           ) : (
             <React.Suspense fallback="Loading dirtiest dodger...">
-              null
+              <FragmentReader fragmentReference={fragmentReference}>
+                {(data) => (
+                  <>
+                    <Stack direction="row" spacing={4}>
+                      <data.Avatar />
+                      <h3>
+                        Is revealed to be <b>{data.name}</b>
+                      </h3>
+                    </Stack>
+                  </>
+                )}
+              </FragmentReader>
             </React.Suspense>
           )}
         </Stack>

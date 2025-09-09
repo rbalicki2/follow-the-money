@@ -9,6 +9,12 @@ import {
 import type { AppProps } from "next/app";
 import { useMemo } from "react";
 
+function wait(timeout: number): Promise<void> {
+  return new Promise((resolve) => {
+    setTimeout(resolve, timeout);
+  });
+}
+
 function makeNetworkRequest<T>(
   operation: IsographOperation,
   variables: unknown
@@ -20,6 +26,10 @@ function makeNetworkRequest<T>(
     },
     body: JSON.stringify({ query: operation.text, variables }),
   }).then(async (response) => {
+    if (operation.text.includes("Query__dirtiestDodger")) {
+      await wait(5000);
+    }
+
     const json = await response.json();
 
     if (response.ok) {
@@ -51,10 +61,6 @@ const missingFieldHandler = (
   arguments_: { [index: string]: any } | null,
   variables: { [index: string]: any } | null
 ): Link | undefined => {
-  // This is the custom missing field handler
-  //
-  // N.B. this **not** correct. We need to pass the correct variables/args here.
-  // But it works for this demo.
   if (
     fieldName === "case" &&
     variables?.caseId != null &&

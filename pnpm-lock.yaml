@@ -15,17 +15,17 @@ importers:
         specifier: ^11.11.0
         version: 11.14.1(@emotion/react@11.14.0(@types/react@18.3.1)(react@18.3.1))(@types/react@18.3.1)(react@18.3.1)
       '@isograph/compiler':
-        specifier: 0.0.0-main-f6a929bf
-        version: 0.0.0-main-f6a929bf
+        specifier: 0.0.0-main-c605cd65
+        version: 0.0.0-main-c605cd65
       '@isograph/plugin-swc':
-        specifier: 0.0.0-main-f6a929bf
-        version: 0.0.0-main-f6a929bf
+        specifier: 0.0.0-main-c605cd65
+        version: 0.0.0-main-c605cd65
       '@isograph/react':
-        specifier: 0.0.0-main-f6a929bf
-        version: 0.0.0-main-f6a929bf(react@18.3.1)
+        specifier: 0.0.0-main-c605cd65
+        version: 0.0.0-main-c605cd65(react@18.3.1)
       '@isograph/react-disposable-state':
-        specifier: 0.0.0-main-f6a929bf
-        version: 0.0.0-main-f6a929bf(react@18.3.1)
+        specifier: 0.0.0-main-c605cd65
+        version: 0.0.0-main-c605cd65(react@18.3.1)
       '@mui/material':
         specifier: ^5.14.8
         version: 5.18.0(@emotion/react@11.14.0(@types/react@18.3.1)(react@18.3.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.1)(react@18.3.1))(@types/react@18.3.1)(react@18.3.1))(@types/react@18.3.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -259,28 +259,28 @@ packages:
     resolution: {integrity: sha512-93zYdMES/c1D69yZiKDBj0V24vqNzB/koF26KPaagAfd3P/4gUlh3Dys5ogAK+Exi9QyzlD8x/08Zt7wIKcDcA==}
     deprecated: Use @eslint/object-schema instead
 
-  '@isograph/compiler@0.0.0-main-f6a929bf':
-    resolution: {integrity: sha512-oUaj6J6jveEqzFi9Obe8lN4Agu1pAAhZt7IYR6TSjB+QjOlEuzsecYycWHVEL8MWwrs5TZzZB3dIvbnlnQH0xw==}
+  '@isograph/compiler@0.0.0-main-c605cd65':
+    resolution: {integrity: sha512-GVC12H9qBWcgGv+ZQTfOrSHEFGc8FLGUQPn/bYcIjT/dl0vaVEsSB9O/1D0Q4cU9P71B90NHFnaqnKN7lmBD4w==}
     hasBin: true
 
-  '@isograph/disposable-types@0.0.0-main-f6a929bf':
-    resolution: {integrity: sha512-URPSutyZuNHvnL0gGMxtCCOMeNow4d9PZTOwewpdlUajgoYpQxvFU7B4+gH6j3LLFKeiS/rsgIpmr5UJYbE9Tg==}
+  '@isograph/disposable-types@0.0.0-main-c605cd65':
+    resolution: {integrity: sha512-ZjqAQu3UlZH7sgQrd3asPS+SCp9q27K2aW+KVdJ+peA5wu6AwKs3b6IgKTWSz7JYOkDbC2KCEPktKW+buwneng==}
 
-  '@isograph/plugin-swc@0.0.0-main-f6a929bf':
-    resolution: {integrity: sha512-31S8EHJgO0sNBREM410gs2wfEhEnaEMhJhlZMrfDBXJTJiGR9b64/TNzZjqWwDOsrA3A4mD238UKps8m97mXJw==}
+  '@isograph/plugin-swc@0.0.0-main-c605cd65':
+    resolution: {integrity: sha512-+E31sgQY2QWySD9A0yr7iY7UzAj6j0vw5XUypGrOt8A77jpLvkoTrNX5RpaJdm3Vah+ewnrFxkn0tPiKjZONeA==}
 
-  '@isograph/react-disposable-state@0.0.0-main-f6a929bf':
-    resolution: {integrity: sha512-b+xrjR9vn6QbZ6DNNdGSv4JnXcWbcd2YIk6n4m9+zgk1RAPxlxVZIxqDmCu7bIFpyHo7L/A1r4nHbJoUVh201g==}
+  '@isograph/react-disposable-state@0.0.0-main-c605cd65':
+    resolution: {integrity: sha512-XBMR7aJrg+Vyrr2FaG9IWQIWcaU5U4tIjWeZUfnGz6sgI45nS5s8x2vQ9E20vJ9xsIcSs+Ny1e3n0enBPfYnsg==}
     peerDependencies:
       react: ^18.0.0 || ^19.0.0
 
-  '@isograph/react@0.0.0-main-f6a929bf':
-    resolution: {integrity: sha512-mPz+JTjvk8dtw04ouxGYbZWsZ0Jljb0vxP0wz1xHjdKvjG9/xa+KTax6ZFVFqGV4uyy4T9NP9Rjn7UkR9lK+aQ==}
+  '@isograph/react@0.0.0-main-c605cd65':
+    resolution: {integrity: sha512-sH3uKT7n7oMPTwVwj5x+sVM3DwDPMk0BE+UdTMcavOfZDbXXW4o3Ncqjl+RpFxMBwwxEu20RRUDztBGATbPUjw==}
     peerDependencies:
       react: ^18.0.0 || ^19.0.0
 
-  '@isograph/reference-counted-pointer@0.0.0-main-f6a929bf':
-    resolution: {integrity: sha512-+D/q+UbrKdrXXo1udcYAtTlbB5Vnptnw1c9xrwbVp3/83HD8TCMmc3yB1PwBGFa8hABIpE6QbyEh3rFDjfZssA==}
+  '@isograph/reference-counted-pointer@0.0.0-main-c605cd65':
+    resolution: {integrity: sha512-Ilyxf6+BlxpI/y9FJUuFDAhwiNL11SRWsm5jDnhnKCnponwPGiobLP7giOZJqf1+/iDN6lOi3pcHroNs3pXJ8Q==}
 
   '@jridgewell/gen-mapping@0.3.13':
     resolution: {integrity: sha512-2kkt/7niJ6MgEPxF0bYdQ6etZaA+fQvDcLKckhy1yIQOzaoKjBBjSj63/aLVjYE3qhRt5dvM+uUyfCg6UKCBbA==}
@@ -2134,29 +2134,29 @@ snapshots:
 
   '@humanwhocodes/object-schema@2.0.3': {}
 
-  '@isograph/compiler@0.0.0-main-f6a929bf': {}
+  '@isograph/compiler@0.0.0-main-c605cd65': {}
 
-  '@isograph/disposable-types@0.0.0-main-f6a929bf': {}
+  '@isograph/disposable-types@0.0.0-main-c605cd65': {}
 
-  '@isograph/plugin-swc@0.0.0-main-f6a929bf':
+  '@isograph/plugin-swc@0.0.0-main-c605cd65':
     dependencies:
       '@swc/counter': 0.1.3
 
-  '@isograph/react-disposable-state@0.0.0-main-f6a929bf(react@18.3.1)':
+  '@isograph/react-disposable-state@0.0.0-main-c605cd65(react@18.3.1)':
     dependencies:
-      '@isograph/disposable-types': 0.0.0-main-f6a929bf
+      '@isograph/disposable-types': 0.0.0-main-c605cd65
       react: 18.3.1
 
-  '@isograph/react@0.0.0-main-f6a929bf(react@18.3.1)':
+  '@isograph/react@0.0.0-main-c605cd65(react@18.3.1)':
     dependencies:
-      '@isograph/disposable-types': 0.0.0-main-f6a929bf
-      '@isograph/react-disposable-state': 0.0.0-main-f6a929bf(react@18.3.1)
-      '@isograph/reference-counted-pointer': 0.0.0-main-f6a929bf
+      '@isograph/disposable-types': 0.0.0-main-c605cd65
+      '@isograph/react-disposable-state': 0.0.0-main-c605cd65(react@18.3.1)
+      '@isograph/reference-counted-pointer': 0.0.0-main-c605cd65
       react: 18.3.1
 
-  '@isograph/reference-counted-pointer@0.0.0-main-f6a929bf':
+  '@isograph/reference-counted-pointer@0.0.0-main-c605cd65':
     dependencies:
-      '@isograph/disposable-types': 0.0.0-main-f6a929bf
+      '@isograph/disposable-types': 0.0.0-main-c605cd65
 
   '@jridgewell/gen-mapping@0.3.13':
     dependencies:
@@ -2863,7 +2863,7 @@ snapshots:
       eslint: 8.49.0
       eslint-import-resolver-node: 0.3.9
       eslint-import-resolver-typescript: 3.10.1(eslint-plugin-import@2.32.0(eslint@8.49.0))(eslint@8.49.0)
-      eslint-plugin-import: 2.32.0(@typescript-eslint/parser@6.21.0(eslint@8.49.0)(typescript@5.6.3))(eslint-import-resolver-typescript@3.10.1)(eslint@8.49.0)
+      eslint-plugin-import: 2.32.0(@typescript-eslint/parser@6.21.0(eslint@8.49.0)(typescript@5.6.3))(eslint-import-resolver-typescript@3.10.1(eslint-plugin-import@2.32.0(eslint@8.49.0))(eslint@8.49.0))(eslint@8.49.0)
       eslint-plugin-jsx-a11y: 6.10.2(eslint@8.49.0)
       eslint-plugin-react: 7.37.5(eslint@8.49.0)
       eslint-plugin-react-hooks: 5.0.0-canary-7118f5dd7-20230705(eslint@8.49.0)
@@ -2893,7 +2893,7 @@ snapshots:
       tinyglobby: 0.2.14
       unrs-resolver: 1.11.1
     optionalDependencies:
-      eslint-plugin-import: 2.32.0(@typescript-eslint/parser@6.21.0(eslint@8.49.0)(typescript@5.6.3))(eslint-import-resolver-typescript@3.10.1)(eslint@8.49.0)
+      eslint-plugin-import: 2.32.0(@typescript-eslint/parser@6.21.0(eslint@8.49.0)(typescript@5.6.3))(eslint-import-resolver-typescript@3.10.1(eslint-plugin-import@2.32.0(eslint@8.49.0))(eslint@8.49.0))(eslint@8.49.0)
     transitivePeerDependencies:
       - supports-color
 
@@ -2908,7 +2908,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-import@2.32.0(@typescript-eslint/parser@6.21.0(eslint@8.49.0)(typescript@5.6.3))(eslint-import-resolver-typescript@3.10.1)(eslint@8.49.0):
+  eslint-plugin-import@2.32.0(@typescript-eslint/parser@6.21.0(eslint@8.49.0)(typescript@5.6.3))(eslint-import-resolver-typescript@3.10.1(eslint-plugin-import@2.32.0(eslint@8.49.0))(eslint@8.49.0))(eslint@8.49.0):
     dependencies:
       '@rtsao/scc': 1.1.0
       array-includes: 3.1.9

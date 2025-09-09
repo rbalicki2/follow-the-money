@@ -6,6 +6,7 @@ type Query {
 
 type Case implements Node {
   id: ID!
+  name: String!
   suspects: [Suspect!]!
 }
 

@@ -7,10 +7,7 @@ import { FullPageLoading } from "./routes";
 
 export const HomeRoute = iso(`
   field Query.HomeRoute @component {
-    pets {
-      id
-      PetSummaryCard
-    }
+    __typename
   }
 `)(function HomeRouteComponent({ data }) {
   return (

@@ -17,8 +17,8 @@ type Suspect implements Node {
   lofiImageUrl: String
   hifiImageUrl: String
   businessAssociates: [Relationship!]
-  taxDelinquency: Number!
-  income: Number!
+  taxDelinquency: Int!
+  income: Int!
   businessName: String!
   customerComplaints: String!
 }
@@ -26,4 +26,8 @@ type Suspect implements Node {
 type Relationship {
   description: String!
   with: Suspect!
+}
+
+interface Node {
+  id: ID!
 }

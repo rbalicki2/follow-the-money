@@ -1,41 +1,21 @@
-import { useRouter } from 'next/router';
+import { useRouter } from "next/router";
 
-export type PetId = string;
+export type CaseId = string;
 
-export type Route =
-  | HomeRoute
-  | PetDetailRoute
-  | PetDetailDeferredRoute
-  | PetByNameRoute
-  | PetCheckinListRoute
-  | SmartestRoute;
+export type Route = HomeRoute | CaseDetailRoute | SuspectDetailRoute;
 
 export type HomeRoute = {
-  kind: 'Home';
+  kind: "Home";
 };
 
-export type PetDetailRoute = {
-  kind: 'PetDetail';
-  id: PetId;
+export type CaseDetailRoute = {
+  kind: "CaseDetail";
+  id: CaseId;
 };
 
-export type PetDetailDeferredRoute = {
-  kind: 'PetDetailDeferred';
-  id: PetId;
-};
-
-export type PetByNameRoute = {
-  kind: 'PetByName';
-  name: string;
-};
-
-export type PetCheckinListRoute = {
-  kind: 'PetCheckinList';
-  id: PetId;
-};
-
-export type SmartestRoute = {
-  kind: 'Smartest';
+export type SuspectDetailRoute = {
+  kind: "SuspectDetail";
+  id: CaseId;
 };
 
 export function useNavigateTo() {
@@ -45,27 +25,18 @@ export function useNavigateTo() {
 
 function toRouteUrl(route: Route): string {
   switch (route.kind) {
-    case 'Home': {
-      return '/';
+    case "Home": {
+      return "/";
     }
-    case 'PetDetail': {
-      return `/pet/${route.id}`;
+    case "CaseDetail": {
+      return `/case/${route.id}`;
     }
-    case 'PetDetailDeferred': {
-      return `/pet/with-defer/${route.id}`;
-    }
-    case 'PetByName': {
-      return `/pet/by-name/${route.name}`;
-    }
-    case 'PetCheckinList': {
-      return `/pet/${route.id}/checkin-list`;
-    }
-    case 'Smartest': {
-      return '/smartest';
+    case "SuspectDetail": {
+      return `/suspect/${route.id}`;
     }
     default: {
       let _: never = route;
-      throw new Error('Unhandled route');
+      throw new Error("Unhandled route");
     }
   }
 }

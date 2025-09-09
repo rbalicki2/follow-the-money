@@ -8,6 +8,7 @@ import { FullPageLoading } from "./routes";
 export const HomeRoute = iso(`
   field Query.HomeRoute @component {
     cases {
+      id
       HomePageCaseDisplay
     }
   }
@@ -16,8 +17,8 @@ export const HomeRoute = iso(`
     <Container maxWidth="md">
       <h1>Open Cases</h1>
       <Stack direction="column" spacing={4}>
-        {data.pets.map((pet) => (
-          <pet.PetSummaryCard key={pet.id} />
+        {data.cases.map((openCase) => (
+          <openCase.HomePageCaseDisplay key={openCase.id} />
         ))}
       </Stack>
     </Container>

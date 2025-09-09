@@ -1,6 +1,18 @@
 import type { IsographEntrypoint } from '@isograph/react';
+import { type Case__DirtiestDodgerCard__param } from './Case/DirtiestDodgerCard/param_type';
+import { type Case__HomePageCaseDisplay__param } from './Case/HomePageCaseDisplay/param_type';
+import { type Case__SuspectsCard__param } from './Case/SuspectsCard/param_type';
+import { type Case__dirtiestDodger__param } from './Case/dirtiestDodger/param_type';
+import { type Query__CaseDetailRoute__param } from './Query/CaseDetailRoute/param_type';
 import { type Query__HomeRoute__param } from './Query/HomeRoute/param_type';
+import { type Query__SuspectDetailRoute__param } from './Query/SuspectDetailRoute/param_type';
+import { type Suspect__Avatar__param } from './Suspect/Avatar/param_type';
+import { type Suspect__BioCard__param } from './Suspect/BioCard/param_type';
+import { type Suspect__IncomeStatementCard__param } from './Suspect/IncomeStatementCard/param_type';
+import { type Suspect__TitleCard__param } from './Suspect/TitleCard/param_type';
+import entrypoint_Query__CaseDetailRoute from '../__isograph/Query/CaseDetailRoute/entrypoint';
 import entrypoint_Query__HomeRoute from '../__isograph/Query/HomeRoute/entrypoint';
+import entrypoint_Query__SuspectDetailRoute from '../__isograph/Query/SuspectDetailRoute/entrypoint';
 
 // This is the type given to regular client fields.
 // This means that the type of the exported iso literal is exactly
@@ -51,12 +63,60 @@ type MatchesWhitespaceAndString<
 > = Whitespace<T> extends `${TString}${string}` ? T : never;
 
 export function iso<T>(
+  param: T & MatchesWhitespaceAndString<'field Case.DirtiestDodgerCard', T>
+): IdentityWithParamComponent<Case__DirtiestDodgerCard__param>;
+
+export function iso<T>(
+  param: T & MatchesWhitespaceAndString<'field Case.HomePageCaseDisplay', T>
+): IdentityWithParamComponent<Case__HomePageCaseDisplay__param>;
+
+export function iso<T>(
+  param: T & MatchesWhitespaceAndString<'field Case.SuspectsCard', T>
+): IdentityWithParamComponent<Case__SuspectsCard__param>;
+
+export function iso<T>(
+  param: T & MatchesWhitespaceAndString<'pointer Case.dirtiestDodger', T>
+): IdentityWithParam<Case__dirtiestDodger__param>;
+
+export function iso<T>(
+  param: T & MatchesWhitespaceAndString<'field Query.CaseDetailRoute', T>
+): IdentityWithParamComponent<Query__CaseDetailRoute__param>;
+
+export function iso<T>(
   param: T & MatchesWhitespaceAndString<'field Query.HomeRoute', T>
 ): IdentityWithParamComponent<Query__HomeRoute__param>;
 
 export function iso<T>(
+  param: T & MatchesWhitespaceAndString<'field Query.SuspectDetailRoute', T>
+): IdentityWithParamComponent<Query__SuspectDetailRoute__param>;
+
+export function iso<T>(
+  param: T & MatchesWhitespaceAndString<'field Suspect.Avatar', T>
+): IdentityWithParamComponent<Suspect__Avatar__param>;
+
+export function iso<T>(
+  param: T & MatchesWhitespaceAndString<'field Suspect.BioCard', T>
+): IdentityWithParamComponent<Suspect__BioCard__param>;
+
+export function iso<T>(
+  param: T & MatchesWhitespaceAndString<'field Suspect.IncomeStatementCard', T>
+): IdentityWithParamComponent<Suspect__IncomeStatementCard__param>;
+
+export function iso<T>(
+  param: T & MatchesWhitespaceAndString<'field Suspect.TitleCard', T>
+): IdentityWithParamComponent<Suspect__TitleCard__param>;
+
+export function iso<T>(
+  param: T & MatchesWhitespaceAndString<'entrypoint Query.CaseDetailRoute', T>
+): typeof entrypoint_Query__CaseDetailRoute;
+
+export function iso<T>(
   param: T & MatchesWhitespaceAndString<'entrypoint Query.HomeRoute', T>
 ): typeof entrypoint_Query__HomeRoute;
+
+export function iso<T>(
+  param: T & MatchesWhitespaceAndString<'entrypoint Query.SuspectDetailRoute', T>
+): typeof entrypoint_Query__SuspectDetailRoute;
 
 export function iso(_isographLiteralText: string):
   | IdentityWithParam<any>

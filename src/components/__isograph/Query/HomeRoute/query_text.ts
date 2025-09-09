@@ -1,3 +1,6 @@
 export default 'query HomeRoute {\
-  __typename,\
+  cases {\
+    id,\
+    name,\
+  },\
 }';

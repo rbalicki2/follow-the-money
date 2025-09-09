@@ -1,6 +1,7 @@
 type Query {
   case(caseId: ID!): Case
   cases: [Case!]!
+  suspect(suspectId: ID!): Suspect
   node(id: ID!): Node
 }
 
@@ -13,11 +14,12 @@ type Case implements Node {
 type Suspect implements Node {
   id: ID!
   name: String!
-  biography: String!
-  lofiImageUrl: String
-  hifiImageUrl: String
+  jobTitle: String!
+  shortBio: String!
+  longBio: String
+  imageUrl: String
   businessAssociates: [Relationship!]
-  taxDelinquency: Int!
+  delinquentTaxes: Int!
   income: Int!
   businessName: String!
   customerComplaints: String!

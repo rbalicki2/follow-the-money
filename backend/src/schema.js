@@ -9,10 +9,14 @@ const schemaContents = fs
 const suspects = [
   {
     id: "suspect_1",
-    name: "Joker",
-    initials: "J",
-    biography: "A psychotic anarchist criminal mastermind.",
-    taxDelinquency: 0,
+    name: "The Joker",
+    jobTitle: "entertainer",
+    imageUrl: "http://localhost:3000/joker.jpg",
+    longBio:
+      "The Joker is a comedian with a flair for the dramatic, particularly when it comes to chaos. He believes the world is a stage, and he's just here to make everyone laugh—even if the punchline is a bit explosive. His hobbies include grand larceny, unsettling smiles, and a deep-seated rivalry with a certain caped crusader who just doesn't appreciate a good joke.",
+    initials: "TJ",
+    shortBio: "A psychotic anarchist criminal mastermind.",
+    delinquentTaxes: 0,
     income: 1000000,
     businessName: "Ace Chemicals",
     customerComplaints: "Too many explosions.",
@@ -25,13 +29,18 @@ const suspects = [
   },
   {
     id: "suspect_2",
-    name: "Penguin",
-    initials: "P",
-    biography: "A Gotham City mobster and criminal.",
-    taxDelinquency: 0,
+    name: "The Penguin",
+    jobTitle: "Politician",
+    imageUrl: "http://localhost:3000/penguin.jpg",
+    longBio:
+      "A short, rotund man with a penchant for high society and umbrellas, the Penguin is a crime lord who runs his empire with a twisted sense of decorum. He sees himself as a refined gentleman of the underworld, often hosting lavish parties while secretly orchestrating the city's most elaborate heists. He's a bit of a control freak, a germaphobe, and a bird enthusiast, often seen surrounded by his feathery friends who serve as both companions and criminal accomplices.",
+    initials: "TP",
+    shortBio: "A Gotham City mobster and criminal.",
+    delinquentTaxes: 0,
     income: 500000,
     businessName: "Iceberg Lounge",
-    customerComplaints: "Bad service.",
+    customerComplaints:
+      "Penguins ate all the food, none left for party guests.",
     businessAssociates: [
       {
         description: "Has a rivalry with",
@@ -45,10 +54,14 @@ const suspects = [
   },
   {
     id: "suspect_3",
-    name: "Riddler",
-    initials: "R",
-    biography: "A criminal genius with a penchant for riddles.",
-    taxDelinquency: 0,
+    name: "The Riddler",
+    imageUrl: "http://localhost:3000/riddler.jpg",
+    initials: "TR",
+    longBio:
+      " A man of exceptional intellect, the Riddler spends his days proving he's the smartest person in any room, especially if that room is a crime scene. His elaborate schemes are less about profit and more about an intellectual high-five with himself. He's a stickler for proper grammar and a good puzzle, and he'll never miss an opportunity to leave a clue—or a very confusing note—just for fun.",
+    jobTitle: "Entertainer",
+    shortBio: "A criminal genius with a penchant for riddles.",
+    delinquentTaxes: 0,
     income: 750000,
     businessName: "Riddle Factory",
     customerComplaints: "Too many questions.",
@@ -57,9 +70,13 @@ const suspects = [
   {
     id: "suspect_4",
     name: "Catwoman",
-    initials: "C",
-    biography: "A master burglar with a mysterious past.",
-    taxDelinquency: 0,
+    jobTitle: "Mousecatcher",
+    longBio:
+      "A master thief with nine lives and an undeniable charm, Catwoman is a morally ambiguous character who lives by her own set of rules. She's a cat burglar who's as likely to steal a priceless gem as she is to save a stray kitten. She's also a big fan of bats, especially the masked ones, and she enjoys a playful, flirtatious dance with them while pilfering their gadgets.",
+    imageUrl: "http://localhost:3000/catwoman.jpg",
+    initials: "CW",
+    shortBio: "A master burglar with a mysterious past.",
+    delinquentTaxes: 0,
     income: 300000,
     businessName: "Cat Burglar Inc.",
     customerComplaints: "Stolen goods.",
@@ -73,12 +90,15 @@ const suspects = [
   {
     id: "suspect_5",
     name: "Patryk Wałach",
+    imageUrl: "http://localhost:3000/patryk.jpg",
     initials: "PW",
-    biography:
+    jobTitle: "Fixer",
+    shortBio: "A former fixer with a suspicious past.",
+    longBio:
       'A former fixer for a shady Gotham politician. Rose through the ranks to be head enforcer at GraphQL conf.\n\
 Likes to crush his competition. Is known for loving AC/DC\'s "Dirty Deeds, Done Dirt Cheap". Except, his services are \n\
 never cheap. Prone to anger.',
-    taxDelinquency: 1000000,
+    delinquentTaxes: 1000000,
     income: 500000,
     businessName: "GraphQL Schema Migrations, Inc.",
     customerComplaints: "Dirty Schemas",
@@ -92,14 +112,31 @@ never cheap. Prone to anger.',
   {
     id: "suspect_6",
     name: "Unknown Business Associate",
+    imageUrl: "http://localhost:3000/kerry.jpg",
     initials: "UBA",
-    biography:
+    jobTitle: "Unknown",
+    shortBio:
       "A mysterious and elegant figure. Has a fondness for Chanel no. 5. Married in Capri. Rumor has it \n\
 four of her previous husbands died in mysterious circumstances.",
-    taxDelinquency: 0,
+    delinquentTaxes: 0,
     income: 250000,
     businessName: "High Society",
     customerComplaints: "",
+    businessAssociates: [],
+  },
+  {
+    id: "suspect_7",
+    name: "Two Face",
+    jobTitle: "Rhetorician",
+    longBio:
+      "Formerly a respected District Attorney, Two-Face is now a man of two halves, both literally and figuratively. His life is governed by the flip of a coin, a single, scarred silver dollar that decides his every move. He's a walking contradiction, capable of both incredible generosity and devastating cruelty, but at least you know one thing for sure: he's always fair. He’s also a big advocate for personal freedom, as long as that freedom is determined by a random toss of a coin.",
+    imageUrl: "http://localhost:3000/twoface.jpg",
+    initials: "TF",
+    shortBio: "Everyone loves him.",
+    delinquentTaxes: 0,
+    income: 300000,
+    businessName: "Two Face Inc.",
+    customerComplaints: "Lies a lot.",
     businessAssociates: [],
   },
 ];
@@ -128,6 +165,8 @@ export const schema = createSchema({
     Query: {
       cases: () => cases,
       case: (parent, { caseId }) => cases.find((c) => c.id === caseId),
+      suspect: (parent, { suspectId }) =>
+        suspects.find((s) => s.id === suspectId),
       node: (parent, { id }) => {
         const foundCase = cases.find((c) => c.id === id);
         if (foundCase) {
@@ -154,8 +193,6 @@ export const schema = createSchema({
           with: suspects.find((s) => s.id === assoc.with),
         }));
       },
-      lofiImageUrl: () => null,
-      hifiImageUrl: () => null,
     },
   },
 });

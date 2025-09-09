@@ -3,9 +3,22 @@ const normalizationAst: NormalizationAst = {
   kind: "NormalizationAst",
   selections: [
     {
-      kind: "Scalar",
-      fieldName: "__typename",
+      kind: "Linked",
+      fieldName: "cases",
       arguments: null,
+      concreteType: "Case",
+      selections: [
+        {
+          kind: "Scalar",
+          fieldName: "id",
+          arguments: null,
+        },
+        {
+          kind: "Scalar",
+          fieldName: "name",
+          arguments: null,
+        },
+      ],
     },
   ],
 };

@@ -7,12 +7,14 @@ import { FullPageLoading } from "./routes";
 
 export const HomeRoute = iso(`
   field Query.HomeRoute @component {
-    __typename
+    cases {
+      HomePageCaseDisplay
+    }
   }
 `)(function HomeRouteComponent({ data }) {
   return (
     <Container maxWidth="md">
-      <h1>Robert&apos;s Pet List 3000</h1>
+      <h1>Open Cases</h1>
       <Stack direction="column" spacing={4}>
         {data.pets.map((pet) => (
           <pet.PetSummaryCard key={pet.id} />

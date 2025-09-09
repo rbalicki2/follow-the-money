@@ -4,7 +4,7 @@ import React from "react";
 
 export const TitleCard = iso(`
   field Suspect.TitleCard @component {
-    name
+    suspectName
     jobTitle
     businessName
     customerComplaints
@@ -21,7 +21,7 @@ export const TitleCard = iso(`
           <suspect.Avatar size={200} />
           <Stack direction="column" spacing={4}>
             <div>
-              <b>{suspect.name}</b> is a {suspect.jobTitle} at{" "}
+              <b>{suspect.suspectName}</b> is a {suspect.jobTitle} at{" "}
               {suspect.businessName}
             </div>
             <div>

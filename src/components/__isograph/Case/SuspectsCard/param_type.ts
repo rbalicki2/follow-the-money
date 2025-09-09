@@ -6,7 +6,7 @@ export type Case__SuspectsCard__param = {
     readonly suspects: ReadonlyArray<{
       readonly id: string,
       readonly Avatar: Suspect__Avatar__output_type,
-      readonly name: string,
+      readonly suspectName: string,
       readonly jobTitle: string,
       readonly businessName: string,
       readonly shortBio: string,

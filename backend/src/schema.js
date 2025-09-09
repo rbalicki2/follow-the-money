@@ -9,7 +9,7 @@ const schemaContents = fs
 const suspects = [
   {
     id: "suspect_1",
-    name: "The Joker",
+    suspectName: "The Joker",
     jobTitle: "entertainer",
     imageUrl: "http://localhost:3000/joker.jpg",
     longBio:
@@ -29,7 +29,7 @@ const suspects = [
   },
   {
     id: "suspect_2",
-    name: "The Penguin",
+    suspectName: "The Penguin",
     jobTitle: "Politician",
     imageUrl: "http://localhost:3000/penguin.jpg",
     longBio:
@@ -54,7 +54,7 @@ const suspects = [
   },
   {
     id: "suspect_3",
-    name: "The Riddler",
+    suspectName: "The Riddler",
     imageUrl: "http://localhost:3000/riddler.jpg",
     initials: "TR",
     longBio:
@@ -69,7 +69,7 @@ const suspects = [
   },
   {
     id: "suspect_4",
-    name: "Catwoman",
+    suspectName: "Catwoman",
     jobTitle: "Mousecatcher",
     longBio:
       "A master thief with nine lives and an undeniable charm, Catwoman is a morally ambiguous character who lives by her own set of rules. She's a cat burglar who's as likely to steal a priceless gem as she is to save a stray kitten. She's also a big fan of bats, especially the masked ones, and she enjoys a playful, flirtatious dance with them while pilfering their gadgets.",
@@ -89,7 +89,7 @@ const suspects = [
   },
   {
     id: "suspect_5",
-    name: "Patryk Wałach",
+    suspectName: "Patryk Wałach",
     imageUrl: "http://localhost:3000/patryk.jpg",
     initials: "PW",
     jobTitle: "Fixer",
@@ -111,7 +111,7 @@ never cheap. Prone to anger.',
   },
   {
     id: "suspect_6",
-    name: "Unknown Business Associate",
+    suspectName: "Unknown Business Associate",
     imageUrl: "http://localhost:3000/kerry.jpg",
     initials: "UBA",
     jobTitle: "Unknown",
@@ -126,7 +126,7 @@ four of her previous husbands died in mysterious circumstances.",
   },
   {
     id: "suspect_7",
-    name: "Two Face",
+    suspectName: "Two Face",
     jobTitle: "Rhetorician",
     longBio:
       "Formerly a respected District Attorney, Two-Face is now a man of two halves, both literally and figuratively. His life is governed by the flip of a coin, a single, scarred silver dollar that decides his every move. He's a walking contradiction, capable of both incredible generosity and devastating cruelty, but at least you know one thing for sure: he's always fair. He’s also a big advocate for personal freedom, as long as that freedom is determined by a random toss of a coin.",
@@ -144,17 +144,17 @@ four of her previous husbands died in mysterious circumstances.",
 const cases = [
   {
     id: "case_1",
-    name: "GraphQL Whodunnit",
+    caseName: "GraphQL Whodunnit",
     suspects: suspects.filter((suspect) => suspect.id !== "suspect_6"),
   },
   {
     id: "case_2",
-    name: "Murder on the Orient Express",
+    caseName: "Murder on the Orient Express",
     suspects: [],
   },
   {
     id: "case_3",
-    name: "Mysterious Affair at Styles",
+    caseName: "Mysterious Affair at Styles",
     suspects: [],
   },
 ];

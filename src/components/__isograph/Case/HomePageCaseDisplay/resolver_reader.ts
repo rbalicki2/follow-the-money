@@ -12,7 +12,7 @@ const readerAst: ReaderAst<Case__HomePageCaseDisplay__param> = [
   },
   {
     kind: "Scalar",
-    fieldName: "name",
+    fieldName: "caseName",
     alias: null,
     arguments: null,
     isUpdatable: false,

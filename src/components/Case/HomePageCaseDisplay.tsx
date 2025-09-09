@@ -5,7 +5,7 @@ import { useNavigateTo } from "../routes";
 export const HomePageCaseDisplay = iso(`
   field Case.HomePageCaseDisplay @component {
     id
-    name
+    caseName
   }
 `)(({ data }) => {
   const navigateTo = useNavigateTo();
@@ -27,7 +27,7 @@ export const HomePageCaseDisplay = iso(`
     >
       <CardContent>
         <Stack direction="row" spacing={4}>
-          <h2>{data.name}</h2>
+          <h2>{data.caseName}</h2>
         </Stack>
       </CardContent>
     </Card>

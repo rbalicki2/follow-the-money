@@ -8,6 +8,6 @@ export default 'query SuspectDetailRoute($id: ID!) {\
     income,\
     jobTitle,\
     longBio,\
-    name,\
+    suspectName,\
   },\
 }';

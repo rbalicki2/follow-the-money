@@ -29,7 +29,7 @@ const readerAst: ReaderAst<Case__SuspectsCard__param> = [
       },
       {
         kind: "Scalar",
-        fieldName: "name",
+        fieldName: "suspectName",
         alias: null,
         arguments: null,
         isUpdatable: false,

@@ -4,7 +4,7 @@ export default 'query Query__dirtiestDodger($id: ID!) {\
       __typename,\
       id,\
       imageUrl,\
-      name,\
+      suspectName,\
     },\
   },\
 }';

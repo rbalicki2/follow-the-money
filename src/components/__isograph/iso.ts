@@ -1,6 +1,7 @@
 import type { IsographEntrypoint } from '@isograph/react';
 import { type Case__DirtiestDodgerCard__param } from './Case/DirtiestDodgerCard/param_type';
 import { type Case__HomePageCaseDisplay__param } from './Case/HomePageCaseDisplay/param_type';
+import { type Case__Inner__param } from './Case/Inner/param_type';
 import { type Case__SuspectsCard__param } from './Case/SuspectsCard/param_type';
 import { type Case__dirtiestDodger__param } from './Case/dirtiestDodger/param_type';
 import { type Query__CaseDetailRoute__param } from './Query/CaseDetailRoute/param_type';
@@ -70,6 +71,10 @@ export function iso<T>(
 export function iso<T>(
   param: T & MatchesWhitespaceAndString<'field Case.HomePageCaseDisplay', T>
 ): IdentityWithParamComponent<Case__HomePageCaseDisplay__param>;
+
+export function iso<T>(
+  param: T & MatchesWhitespaceAndString<'field Case.Inner', T>
+): IdentityWithParamComponent<Case__Inner__param>;
 
 export function iso<T>(
   param: T & MatchesWhitespaceAndString<'field Case.SuspectsCard', T>

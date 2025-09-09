@@ -6,7 +6,7 @@ import Suspect__Avatar__resolver_reader from '../../Suspect/Avatar/resolver_read
 const readerAst: ReaderAst<Suspect__TitleCard__param> = [
   {
     kind: "Scalar",
-    fieldName: "name",
+    fieldName: "suspectName",
     alias: null,
     arguments: null,
     isUpdatable: false,

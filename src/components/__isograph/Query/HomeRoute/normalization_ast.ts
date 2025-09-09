@@ -15,7 +15,7 @@ const normalizationAst: NormalizationAst = {
         },
         {
           kind: "Scalar",
-          fieldName: "name",
+          fieldName: "caseName",
           arguments: null,
         },
       ],

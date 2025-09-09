@@ -7,13 +7,13 @@ type Query {
 
 type Case implements Node {
   id: ID!
-  name: String!
+  caseName: String!
   suspects: [Suspect!]!
 }
 
 type Suspect implements Node {
   id: ID!
-  name: String!
+  suspectName: String!
   jobTitle: String!
   shortBio: String!
   longBio: String

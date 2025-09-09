@@ -10,7 +10,7 @@ export const CaseDetailRouteComponent = iso(`
     openCase: case(
       caseId: $id
     ) {
-      name
+      caseName
       SuspectsCard
       DirtiestDodgerCard
     }
@@ -23,7 +23,7 @@ export const CaseDetailRouteComponent = iso(`
   }
   return (
     <Container maxWidth="md">
-      <h1>{openCase.name}</h1>
+      <h1>{openCase.caseName}</h1>
       <h3
         onClick={() => navigateTo({ kind: "Home" })}
         style={{ cursor: "pointer" }}

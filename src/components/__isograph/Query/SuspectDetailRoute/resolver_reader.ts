@@ -21,7 +21,7 @@ const readerAst: ReaderAst<Query__SuspectDetailRoute__param> = [
     selections: [
       {
         kind: "Scalar",
-        fieldName: "name",
+        fieldName: "suspectName",
         alias: null,
         arguments: null,
         isUpdatable: false,

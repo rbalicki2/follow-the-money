@@ -8,7 +8,7 @@ export const SuspectsCard = iso(`
     suspects {
       id
       Avatar
-      name
+      suspectName
       jobTitle
       businessName
       shortBio
@@ -30,7 +30,7 @@ export const SuspectsCard = iso(`
               <suspect.Avatar />
               <div>
                 <p>
-                  <b>{suspect.name}</b>: {suspect.jobTitle} at{" "}
+                  <b>{suspect.suspectName}</b>: {suspect.jobTitle} at{" "}
                   {suspect.businessName}
                 </p>
                 <p>{suspect.shortBio}</p>

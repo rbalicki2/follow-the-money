@@ -2,7 +2,7 @@ import { type Suspect__Avatar__output_type } from '../../Suspect/Avatar/output_t
 
 export type Suspect__TitleCard__param = {
   readonly data: {
-    readonly name: string,
+    readonly suspectName: string,
     readonly jobTitle: string,
     readonly businessName: string,
     readonly customerComplaints: string,

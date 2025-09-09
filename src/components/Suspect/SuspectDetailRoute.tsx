@@ -10,7 +10,7 @@ export const CaseDetailRouteComponent = iso(`
     suspect(
       suspectId: $id
     ) {
-      name
+      suspectName
       TitleCard
       BioCard
       IncomeStatementCard
@@ -24,7 +24,7 @@ export const CaseDetailRouteComponent = iso(`
   }
   return (
     <Container maxWidth="md">
-      <h1>{suspect.name}</h1>
+      <h1>{suspect.suspectName}</h1>
       <h3 onClick={() => history.back()} style={{ cursor: "pointer" }}>
         ← Back
       </h3>

@@ -20,7 +20,7 @@ const readerAst: ReaderAst<Query__CaseDetailRoute__param> = [
     selections: [
       {
         kind: "Scalar",
-        fieldName: "name",
+        fieldName: "caseName",
         alias: null,
         arguments: null,
         isUpdatable: false,

@@ -111,7 +111,7 @@ never cheap. Prone to anger.',
   },
   {
     id: "suspect_6",
-    suspectName: "Unknown Business Associate",
+    suspectName: "Unknown Person",
     imageUrl: "http://localhost:3000/kerry.jpg",
     initials: "UBA",
     jobTitle: "Unknown",

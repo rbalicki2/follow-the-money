@@ -9,6 +9,7 @@ import { type Query__HomeRoute__param } from './Query/HomeRoute/param_type';
 import { type Query__SuspectDetailRoute__param } from './Query/SuspectDetailRoute/param_type';
 import { type Suspect__Avatar__param } from './Suspect/Avatar/param_type';
 import { type Suspect__BioCard__param } from './Suspect/BioCard/param_type';
+import { type Suspect__BusinessAssociatesCard__param } from './Suspect/BusinessAssociatesCard/param_type';
 import { type Suspect__ClearDebtsButton__param } from './Suspect/ClearDebtsButton/param_type';
 import { type Suspect__IncomeStatementCard__param } from './Suspect/IncomeStatementCard/param_type';
 import { type Suspect__TitleCard__param } from './Suspect/TitleCard/param_type';
@@ -103,6 +104,10 @@ export function iso<T>(
 export function iso<T>(
   param: T & MatchesWhitespaceAndString<'field Suspect.BioCard', T>
 ): IdentityWithParamComponent<Suspect__BioCard__param>;
+
+export function iso<T>(
+  param: T & MatchesWhitespaceAndString<'field Suspect.BusinessAssociatesCard', T>
+): IdentityWithParamComponent<Suspect__BusinessAssociatesCard__param>;
 
 export function iso<T>(
   param: T & MatchesWhitespaceAndString<'field Suspect.ClearDebtsButton', T>

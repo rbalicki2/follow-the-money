@@ -1,35 +1,98 @@
 type Query {
+  """
+  Get a specific case. Probably a cold one, judging by the dust bunnies.
+  """
   case(caseId: ID!): Case
+  """
+  All the cases. A veritable mountain of paperwork and unsolved mysteries.
+  """
   cases: [Case!]!
+  """
+  Find a specific suspect. Are they guilty? Probably. Do they have a good alibi? Doubtful.
+  """
   suspect(suspectId: ID!): Suspect
+  """
+  The ultimate "find anything" query. It's like a magical, all-knowing oracle, but for IDs.
+  """
   node(id: ID!): Node
 }
 
 type Case implements Node {
+  """
+  The unique identifier for this particular can of worms.
+  """
   id: ID!
+  """
+  The official title, like "The Mystery of the Missing Doughnuts."
+  """
   caseName: String!
+  """
+  All the shady characters involved. Each one is probably hiding something, even if it's just a bad haircut.
+  """
   suspects: [Suspect!]!
 }
 
 type Suspect implements Node {
+  """
+  Their unique ID, which is definitely not a witness protection number.
+  """
   id: ID!
+  """
+  Their official name, likely an alias like "Barnaby Buttercup."
+  """
   suspectName: String!
+  """
+  What they do for a living. Could be a professional napper or an artisanal cheese smuggler.
+  """
   jobTitle: String!
+  """
+  The quick-and-dirty version of their life story. Just the highlights, like "once won a hot dog eating contest."
+  """
   shortBio: String!
+  """
+  The full, unabridged version, complete with their hopes, dreams, and a detailed list of their favorite sandwiches.
+  """
   longBio: String
+  """
+  A picture of them, likely a mugshot taken on a bad hair day.
+  """
   imageUrl: String
+  """
+  A list of everyone they've ever done business with. It's a tangled web of questionable deals and even more questionable people.
+  """
   businessAssociates: [Relationship!]
+  """
+  The amount of money they owe the government. The bigger the number, the more suspicious they are.
+  """
   delinquentTaxes: Int!
+  """
+  Their official income. Often suspiciously low for someone with a solid gold toilet.
+  """
   income: Int!
+  """
+  The name of their business. "Totally Legitimate Enterprises, Inc." is a common one.
+  """
   businessName: String!
+  """
+  The digital trail of angry customers. From "my pizza was cold" to "he stole my identity and my dog."
+  """
   customerComplaints: String!
 }
 
 type Relationship {
+  """
+  The nature of their "relationship." It's either "best friends" or "mortal enemies." There is no in-between.
+  """
   description: String!
+  """
+  The person they are entangled with in this glorious mess.
+  """
   with: Suspect!
 }
 
 interface Node {
+  """
+  The universal ID. If you have this, you can find anything, but you might not like what you find.
+  """
   id: ID!
 }

@@ -19,6 +19,47 @@ const normalizationAst: NormalizationAst = {
           arguments: null,
         },
         {
+          kind: "Linked",
+          fieldName: "businessAssociates",
+          arguments: null,
+          concreteType: "Relationship",
+          selections: [
+            {
+              kind: "Scalar",
+              fieldName: "description",
+              arguments: null,
+            },
+            {
+              kind: "Linked",
+              fieldName: "with",
+              arguments: null,
+              concreteType: "Suspect",
+              selections: [
+                {
+                  kind: "Scalar",
+                  fieldName: "id",
+                  arguments: null,
+                },
+                {
+                  kind: "Scalar",
+                  fieldName: "imageUrl",
+                  arguments: null,
+                },
+                {
+                  kind: "Scalar",
+                  fieldName: "shortBio",
+                  arguments: null,
+                },
+                {
+                  kind: "Scalar",
+                  fieldName: "suspectName",
+                  arguments: null,
+                },
+              ],
+            },
+          ],
+        },
+        {
           kind: "Scalar",
           fieldName: "businessName",
           arguments: null,

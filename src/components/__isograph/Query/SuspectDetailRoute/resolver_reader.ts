@@ -2,6 +2,7 @@ import type {ComponentReaderArtifact, ExtractSecondParam, ReaderAst } from '@iso
 import { Query__SuspectDetailRoute__param } from './param_type';
 import { CaseDetailRouteComponent as resolver } from '../../../Suspect/SuspectDetailRoute';
 import Suspect__BioCard__resolver_reader from '../../Suspect/BioCard/resolver_reader';
+import Suspect__BusinessAssociatesCard__resolver_reader from '../../Suspect/BusinessAssociatesCard/resolver_reader';
 import Suspect__IncomeStatementCard__resolver_reader from '../../Suspect/IncomeStatementCard/resolver_reader';
 import Suspect__TitleCard__resolver_reader from '../../Suspect/TitleCard/resolver_reader';
 
@@ -52,6 +53,13 @@ const readerAst: ReaderAst<Query__SuspectDetailRoute__param> = [
         alias: "IncomeStatementCard",
         arguments: null,
         readerArtifact: Suspect__IncomeStatementCard__resolver_reader,
+        usedRefetchQueries: [],
+      },
+      {
+        kind: "Resolver",
+        alias: "BusinessAssociatesCard",
+        arguments: null,
+        readerArtifact: Suspect__BusinessAssociatesCard__resolver_reader,
         usedRefetchQueries: [],
       },
     ],

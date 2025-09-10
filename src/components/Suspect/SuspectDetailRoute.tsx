@@ -16,6 +16,7 @@ export const CaseDetailRouteComponent = iso(`
       TitleCard
       BioCard
       IncomeStatementCard
+      BusinessAssociatesCard
     }
   }
 `)(function CaseDetailRouteComponent({ data, parameters }) {
@@ -38,10 +39,11 @@ export const CaseDetailRouteComponent = iso(`
           </Stack>
           <Stack direction="column" spacing={4}>
             <suspect.IncomeStatementCard />
-            {suspect.id === "suspect_5" && <Misc />}
+            <suspect.BusinessAssociatesCard />
           </Stack>
         </Stack>
       </React.Suspense>
+      {suspect.id === "suspect_5" && <Misc />}
     </Container>
   );
 });

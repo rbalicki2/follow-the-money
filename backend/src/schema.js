@@ -90,7 +90,7 @@ const suspects = [
   {
     id: "suspect_5",
     suspectName: "Patryk Wałach",
-    imageUrl: "http://localhost:3000/patryk.jpg",
+    imageUrl: "http://localhost:3000/patryk.png",
     initials: "PW",
     jobTitle: "Fixer",
     shortBio: "A former fixer with a suspicious past.",

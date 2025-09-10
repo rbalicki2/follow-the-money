@@ -1,5 +1,5 @@
-export default 'query CaseDetailRoute($id: ID!) {\
-  case____caseId___v_id: case(caseId: $id) {\
+export default 'query CaseDetailRoute($caseId: ID!) {\
+  case____caseId___v_caseId: case(caseId: $caseId) {\
     id,\
     caseName,\
     suspects {\

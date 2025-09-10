@@ -2,14 +2,16 @@ import { iso } from "@iso";
 import { Container, Stack } from "@mui/material";
 import { useNavigateTo } from "../routes";
 import React from "react";
+import Misc from "../Misc";
 
 export const CaseDetailRouteComponent = iso(`
   field Query.SuspectDetailRoute(
-    $id: ID !
+    $suspectId: ID !
   ) @component {
     suspect(
-      suspectId: $id
+      suspectId: $suspectId
     ) {
+      id
       suspectName
       TitleCard
       BioCard
@@ -28,7 +30,7 @@ export const CaseDetailRouteComponent = iso(`
       <h3 onClick={() => history.back()} style={{ cursor: "pointer" }}>
         ← Back
       </h3>
-      <React.Suspense fallback={<h2>Loading case details...</h2>}>
+      <React.Suspense fallback={<h2>Loading suspect details...</h2>}>
         <Stack direction="row" spacing={4}>
           <Stack direction="column" spacing={4}>
             <suspect.TitleCard />
@@ -36,6 +38,7 @@ export const CaseDetailRouteComponent = iso(`
           </Stack>
           <Stack direction="column" spacing={4}>
             <suspect.IncomeStatementCard />
+            {suspect.id === "suspect_5" && <Misc />}
           </Stack>
         </Stack>
       </React.Suspense>

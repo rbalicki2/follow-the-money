@@ -5,10 +5,10 @@ import React from "react";
 
 export const CaseDetailRouteComponent = iso(`
   field Query.CaseDetailRoute(
-    $id: ID !
+    $caseId: ID !
   ) @component {
     openCase: case(
-      caseId: $id
+      caseId: $caseId
     ) {
       caseName
       SuspectsCard

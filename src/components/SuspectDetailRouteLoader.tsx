@@ -11,7 +11,7 @@ export function SuspectDetailRouteLoader({
 }) {
   const { fragmentReference } = useLazyReference(
     iso(`entrypoint Query.SuspectDetailRoute`),
-    { id: route.id },
+    { suspectId: route.id },
     {}
   );
 

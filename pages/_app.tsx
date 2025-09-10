@@ -26,9 +26,9 @@ function makeNetworkRequest<T>(
     },
     body: JSON.stringify({ query: operation.text, variables }),
   }).then(async (response) => {
-    // if (operation.text.includes("Query__dirtiestDodger")) {
-    //   await wait(5000);
-    // }
+    if (operation.text.includes("SuspectDetailRoute")) {
+      // await wait(5000);
+    }
 
     const json = await response.json();
 

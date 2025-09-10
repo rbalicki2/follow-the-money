@@ -6,6 +6,7 @@ import type { Query__SuspectDetailRoute__parameters } from './parameters_type';
 export type Query__SuspectDetailRoute__param = {
   readonly data: {
     readonly suspect: ({
+      readonly id: string,
       readonly suspectName: string,
       readonly TitleCard: Suspect__TitleCard__output_type,
       readonly BioCard: Suspect__BioCard__output_type,

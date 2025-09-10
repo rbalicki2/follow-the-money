@@ -1,5 +1,5 @@
-export default 'query SuspectDetailRoute($id: ID!) {\
-  suspect____suspectId___v_id: suspect(suspectId: $id) {\
+export default 'query SuspectDetailRoute($suspectId: ID!) {\
+  suspect____suspectId___v_suspectId: suspect(suspectId: $suspectId) {\
     id,\
     businessName,\
     customerComplaints,\

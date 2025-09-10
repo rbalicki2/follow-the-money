@@ -7,7 +7,7 @@ import { FullPageLoading, CaseDetailRoute } from "./routes";
 export function CaseDetailRouteLoader({ route }: { route: CaseDetailRoute }) {
   const { fragmentReference } = useLazyReference(
     iso(`entrypoint Query.CaseDetailRoute`),
-    { id: route.id },
+    { caseId: route.id },
     {}
   );
 

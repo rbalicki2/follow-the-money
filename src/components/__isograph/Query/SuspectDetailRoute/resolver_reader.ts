@@ -13,12 +13,19 @@ const readerAst: ReaderAst<Query__SuspectDetailRoute__param> = [
     arguments: [
       [
         "suspectId",
-        { kind: "Variable", name: "id" },
+        { kind: "Variable", name: "suspectId" },
       ],
     ],
     condition: null,
     isUpdatable: false,
     selections: [
+      {
+        kind: "Scalar",
+        fieldName: "id",
+        alias: null,
+        arguments: null,
+        isUpdatable: false,
+      },
       {
         kind: "Scalar",
         fieldName: "suspectName",

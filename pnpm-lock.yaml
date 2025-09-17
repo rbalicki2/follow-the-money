@@ -15,17 +15,14 @@ importers:
         specifier: ^11.11.0
         version: 11.14.1(@emotion/react@11.14.0(@types/react@18.3.1)(react@18.3.1))(@types/react@18.3.1)(react@18.3.1)
       '@isograph/compiler':
-        specifier: 0.0.0-main-5f175587
-        version: 0.0.0-main-5f175587
+        specifier: 0.0.0-main-57550be1
+        version: 0.0.0-main-57550be1
       '@isograph/plugin-swc':
-        specifier: 0.0.0-main-5f175587
-        version: 0.0.0-main-5f175587
+        specifier: 0.0.0-main-57550be1
+        version: 0.0.0-main-57550be1
       '@isograph/react':
-        specifier: 0.0.0-main-5f175587
-        version: 0.0.0-main-5f175587(react@18.3.1)
-      '@isograph/react-disposable-state':
-        specifier: 0.0.0-main-5f175587
-        version: 0.0.0-main-5f175587(react@18.3.1)
+        specifier: 0.0.0-main-57550be1
+        version: 0.0.0-main-57550be1(react@18.3.1)
       '@mui/material':
         specifier: ^5.14.8
         version: 5.18.0(@emotion/react@11.14.0(@types/react@18.3.1)(react@18.3.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.1)(react@18.3.1))(@types/react@18.3.1)(react@18.3.1))(@types/react@18.3.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -259,28 +256,28 @@ packages:
     resolution: {integrity: sha512-93zYdMES/c1D69yZiKDBj0V24vqNzB/koF26KPaagAfd3P/4gUlh3Dys5ogAK+Exi9QyzlD8x/08Zt7wIKcDcA==}
     deprecated: Use @eslint/object-schema instead
 
-  '@isograph/compiler@0.0.0-main-5f175587':
-    resolution: {integrity: sha512-Ou6q6X2hFl7usa+AC3boQGug4U40isiFw6RmJxse0rdkHkHCaI9e7cE3h/1jI4Wi/3cH/XvdrDAZ8tV7xuqbvg==}
+  '@isograph/compiler@0.0.0-main-57550be1':
+    resolution: {integrity: sha512-ktma0MA9n0ppXOCzI9eCTBVXCrlcsRXx+92N6ynHh5Eiv0J0xi4tfzQfSN3CorLCAKPBPiBvB593SfW1MLqYFQ==}
     hasBin: true
 
-  '@isograph/disposable-types@0.0.0-main-5f175587':
-    resolution: {integrity: sha512-qV2uc0JYK7pJIkfuz6H68GF9kFNIuR/mDILD7htW6d/qHS3zcKeqJ3wlPAtlLMzW/TLk4pwR4XWDoiLBdV0ekw==}
+  '@isograph/disposable-types@0.0.0-main-57550be1':
+    resolution: {integrity: sha512-vxp7JwdgSWdDx/S6/u+1dkaY5+70A7zc8oqLELIbNXgDv/2RE+B1sa95wrsyuYmG365yHHqeB0uOgSW//VPAbQ==}
 
-  '@isograph/plugin-swc@0.0.0-main-5f175587':
-    resolution: {integrity: sha512-wu/eP41Q06rLBki/uwYchQEFDJWOkKdl+I+/9apZ7SEPoz/E4lwh6iGp1oyyALeJImopM2cCv3MtoIndhQAtRA==}
+  '@isograph/plugin-swc@0.0.0-main-57550be1':
+    resolution: {integrity: sha512-8I7tEcol7WFXLDIOnKuKsFwG+KEVW8EQ7vBFvQTRcz6Yd3wIpQkVzXOJeMP/DchO5f0b6g2ItK4q3GGtoLcQog==}
 
-  '@isograph/react-disposable-state@0.0.0-main-5f175587':
-    resolution: {integrity: sha512-4X6rsZ3h6Y5M7trqne933Gs5f+9mhIjKUBox8oNVGk2QekBoBtCOaPqVRWwYkVx+16+E2gNl/6F9jvr9oc825g==}
+  '@isograph/react-disposable-state@0.0.0-main-57550be1':
+    resolution: {integrity: sha512-sCXSkG/inm2ftJmhVbGgtm13JJvE7Di3eYTNTRFj5KMt+PVbgEGn42tL8K416BmzL4Hs0WtlUXmQ/pSVTrQ0BQ==}
     peerDependencies:
       react: ^18.0.0 || ^19.0.0
 
-  '@isograph/react@0.0.0-main-5f175587':
-    resolution: {integrity: sha512-ApTcD/uYGVTwX/fi9joF07uW/myVO0gRlGoZURq4lC8GgqWogouTZslLMqdOI7u6uYjXaRr6gXU9VMpDTucVRQ==}
+  '@isograph/react@0.0.0-main-57550be1':
+    resolution: {integrity: sha512-wO5/wGtb2O7YTeRSPWEkSuh4NiTBSlXNW7t1iScBkJaTdLgO3YhPRCS8rlokbImnmNabdDUhfgzt/Tk0A/zZVA==}
     peerDependencies:
       react: ^18.0.0 || ^19.0.0
 
-  '@isograph/reference-counted-pointer@0.0.0-main-5f175587':
-    resolution: {integrity: sha512-ef+UiPisvIouuTvPIRmf8ImozQaUtDpaagKEYBaUgDePWTfkkNhNxIac3KRu2Slx2C6LXHABdll3GP0lpbYCrQ==}
+  '@isograph/reference-counted-pointer@0.0.0-main-57550be1':
+    resolution: {integrity: sha512-IPGx827Wwl+ZDHx1jHYAyxqGUz1ugGBR+S9ly5F/qird7KxIaWCYEc4ssBBrG1mTZkkU5iDbMM+NPdMJfih21Q==}
 
   '@jridgewell/gen-mapping@0.3.13':
     resolution: {integrity: sha512-2kkt/7niJ6MgEPxF0bYdQ6etZaA+fQvDcLKckhy1yIQOzaoKjBBjSj63/aLVjYE3qhRt5dvM+uUyfCg6UKCBbA==}
@@ -2134,29 +2131,29 @@ snapshots:
 
   '@humanwhocodes/object-schema@2.0.3': {}
 
-  '@isograph/compiler@0.0.0-main-5f175587': {}
+  '@isograph/compiler@0.0.0-main-57550be1': {}
 
-  '@isograph/disposable-types@0.0.0-main-5f175587': {}
+  '@isograph/disposable-types@0.0.0-main-57550be1': {}
 
-  '@isograph/plugin-swc@0.0.0-main-5f175587':
+  '@isograph/plugin-swc@0.0.0-main-57550be1':
     dependencies:
       '@swc/counter': 0.1.3
 
-  '@isograph/react-disposable-state@0.0.0-main-5f175587(react@18.3.1)':
+  '@isograph/react-disposable-state@0.0.0-main-57550be1(react@18.3.1)':
     dependencies:
-      '@isograph/disposable-types': 0.0.0-main-5f175587
+      '@isograph/disposable-types': 0.0.0-main-57550be1
       react: 18.3.1
 
-  '@isograph/react@0.0.0-main-5f175587(react@18.3.1)':
+  '@isograph/react@0.0.0-main-57550be1(react@18.3.1)':
     dependencies:
-      '@isograph/disposable-types': 0.0.0-main-5f175587
-      '@isograph/react-disposable-state': 0.0.0-main-5f175587(react@18.3.1)
-      '@isograph/reference-counted-pointer': 0.0.0-main-5f175587
+      '@isograph/disposable-types': 0.0.0-main-57550be1
+      '@isograph/react-disposable-state': 0.0.0-main-57550be1(react@18.3.1)
+      '@isograph/reference-counted-pointer': 0.0.0-main-57550be1
       react: 18.3.1
 
-  '@isograph/reference-counted-pointer@0.0.0-main-5f175587':
+  '@isograph/reference-counted-pointer@0.0.0-main-57550be1':
     dependencies:
-      '@isograph/disposable-types': 0.0.0-main-5f175587
+      '@isograph/disposable-types': 0.0.0-main-57550be1
 
   '@jridgewell/gen-mapping@0.3.13':
     dependencies:

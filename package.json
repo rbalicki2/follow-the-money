@@ -3,7 +3,6 @@
   "version": "0.3.1",
   "private": true,
   "scripts": {
-    "build:swc-plugin": "cd ../../libs/isograph-swc-plugin && pnpm build && cd ../../demos/pet-demo",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -15,10 +14,9 @@
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
-    "@isograph/react": "0.0.0-main-5f175587",
-    "@isograph/react-disposable-state": "0.0.0-main-5f175587",
-    "@isograph/compiler": "0.0.0-main-5f175587",
-    "@isograph/plugin-swc": "0.0.0-main-5f175587",
+    "@isograph/react": "0.0.0-main-57550be1",
+    "@isograph/compiler": "0.0.0-main-57550be1",
+    "@isograph/plugin-swc": "0.0.0-main-57550be1",
     "@mui/material": "^5.14.8",
     "@types/node": "20.6.0",
     "@types/react": "18.3.1",

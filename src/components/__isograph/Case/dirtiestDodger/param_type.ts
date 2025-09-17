@@ -1,4 +1,4 @@
-import type { Link } from '@isograph/react';
+import { type Suspect__link__output_type } from '../../Suspect/link/output_type';
 
 export type Case__dirtiestDodger__param = {
   readonly data: {
@@ -9,7 +9,7 @@ All the shady characters involved. Each one is probably hiding something, even i
       /**
 A store Link for the Suspect type.
       */
-      readonly link: Link,
+      readonly link: Suspect__link__output_type,
       /**
 The amount of money they owe the government. The bigger the number, the more suspicious they are.
       */

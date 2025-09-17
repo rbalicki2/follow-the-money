@@ -13,6 +13,7 @@ import { type Suspect__BusinessAssociatesCard__param } from './Suspect/BusinessA
 import { type Suspect__ClearDebtsButton__param } from './Suspect/ClearDebtsButton/param_type';
 import { type Suspect__IncomeStatementCard__param } from './Suspect/IncomeStatementCard/param_type';
 import { type Suspect__TitleCard__param } from './Suspect/TitleCard/param_type';
+import { type Suspect__link__output_type } from './Suspect/link/output_type';
 import entrypoint_Query__CaseDetailRoute from '../__isograph/Query/CaseDetailRoute/entrypoint';
 import entrypoint_Query__HomeRoute from '../__isograph/Query/HomeRoute/entrypoint';
 import entrypoint_Query__SuspectDetailRoute from '../__isograph/Query/SuspectDetailRoute/entrypoint';
@@ -21,7 +22,7 @@ import entrypoint_Query__SuspectDetailRoute from '../__isograph/Query/SuspectDet
 // This means that the type of the exported iso literal is exactly
 // the type of the passed-in function, which takes one parameter
 // of type TParam.
-type IdentityWithParam<TParam extends object> = <TClientFieldReturn>(
+type IdentityWithParam<TParam extends object, TReturnConstraint = unknown> = <TClientFieldReturn extends TReturnConstraint>(
   clientField: (param: TParam) => TClientFieldReturn
 ) => (param: TParam) => TClientFieldReturn;
 
@@ -83,7 +84,7 @@ export function iso<T>(
 
 export function iso<T>(
   param: T & MatchesWhitespaceAndString<'pointer Case.dirtiestDodger', T>
-): IdentityWithParam<Case__dirtiestDodger__param>;
+): IdentityWithParam<Case__dirtiestDodger__param, Suspect__link__output_type>;
 
 export function iso<T>(
   param: T & MatchesWhitespaceAndString<'field Query.CaseDetailRoute', T>

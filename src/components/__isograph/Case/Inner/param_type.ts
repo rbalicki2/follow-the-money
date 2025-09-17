@@ -13,13 +13,13 @@ The amount of money they owe the government. The bigger the number, the more sus
       */
       readonly delinquentTaxes: number,
     }>,
-    readonly dirtiestDodger: LoadableField<Case__dirtiestDodger__param, {
+    readonly dirtiestDodger: LoadableField<Case__dirtiestDodger__param, ({
       /**
 Their official name, likely an alias like "Barnaby Buttercup."
       */
       readonly suspectName: string,
       readonly Avatar: Suspect__Avatar__output_type,
-    }>,
+    } | null)>,
   },
   readonly parameters: Record<PropertyKey, never>,
 };

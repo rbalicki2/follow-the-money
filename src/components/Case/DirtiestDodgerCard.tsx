@@ -59,16 +59,18 @@ export const DirtiestCardInner = iso(`
           <React.Suspense fallback="Loading dirtiest dodger...">
             {fragmentReference != null && (
               <FragmentReader fragmentReference={fragmentReference}>
-                {(data) => (
-                  <>
-                    <Stack direction="row" spacing={4}>
-                      <data.Avatar />
-                      <h3>
-                        Is revealed to be <b>{data.suspectName}</b>
-                      </h3>
-                    </Stack>
-                  </>
-                )}
+                {(data) =>
+                  data && (
+                    <>
+                      <Stack direction="row" spacing={4}>
+                        <data.Avatar />
+                        <h3>
+                          Is revealed to be <b>{data.suspectName}</b>
+                        </h3>
+                      </Stack>
+                    </>
+                  )
+                }
               </FragmentReader>
             )}
           </React.Suspense>

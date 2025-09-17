@@ -1,7 +1,7 @@
 import { iso } from "@iso";
 
 export const SuspectsCard = iso(`
-  pointer Case.dirtiestDodger to Suspect ! {
+  pointer Case.dirtiestDodger to Suspect {
     suspects {
       link
       delinquentTaxes

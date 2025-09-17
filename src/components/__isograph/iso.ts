@@ -84,7 +84,7 @@ export function iso<T>(
 
 export function iso<T>(
   param: T & MatchesWhitespaceAndString<'pointer Case.dirtiestDodger', T>
-): IdentityWithParam<Case__dirtiestDodger__param, Suspect__link__output_type>;
+): IdentityWithParam<Case__dirtiestDodger__param, (Suspect__link__output_type | null)>;
 
 export function iso<T>(
   param: T & MatchesWhitespaceAndString<'field Query.CaseDetailRoute', T>

@@ -60,7 +60,7 @@ export const DirtiestCardInner = iso(`
             {fragmentReference != null && (
               <FragmentReader fragmentReference={fragmentReference}>
                 {(data) =>
-                  data && (
+                  data != null ? (
                     <>
                       <Stack direction="row" spacing={4}>
                         <data.Avatar />
@@ -69,6 +69,8 @@ export const DirtiestCardInner = iso(`
                         </h3>
                       </Stack>
                     </>
+                  ) : (
+                    <div>No dirtiest dodger found</div>
                   )
                 }
               </FragmentReader>
